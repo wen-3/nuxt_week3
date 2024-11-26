@@ -1,11 +1,20 @@
 <script setup>
-  const route = useRoute();
-  const router = useRouter();
-
-  console.log(route);
-  const gotoAndPage = (path) => {
-    router.push({ path });
-  };
+useHead({
+  title: 'Nuxt3 直播的首頁',
+  meta: [
+    { name: 'description', content: 'Vue 是屬於前端框架，主要著重在瀏覽器渲染，而有些...' },
+    { property: 'og:title', content: 'Nuxt3 直播' },
+    { property: 'og:description', content: 'Vue 是屬於前端框架，主要著重在瀏覽器渲染，而有些...' },
+    { property: 'og:image', content: `/logo.png` },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '600' },
+    { property: 'og:image:type', content: 'image/jpeg' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Nuxt3 直播' },
+    { name: 'twitter:description', content: 'Vue 是屬於前端框架，主要著重在瀏覽器渲染，而有些...' },
+    { name: 'twitter:image', content: `/logo.png` },
+  ],
+});
 </script>
 
 <template>
