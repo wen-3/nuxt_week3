@@ -33,7 +33,7 @@ console.log("config=>", config);
 console.log("config.public=>", config.public);
 
 if (process.server) {
-  console.log("server token:", config.token);
+  console.log("server token:", config.TOKEN);
 }
 
 if (process.client) {
