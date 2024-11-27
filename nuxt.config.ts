@@ -1,5 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  "runtimeConfig": {
+    "token": '1234567890',
+    "public": {
+      "apiUrl": 'https://www.mike.com',
+    }
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   app: {

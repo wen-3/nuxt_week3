@@ -27,6 +27,22 @@ useHead({
     },
   ],
 });
+
+const config = useRuntimeConfig();
+console.log("config=>", config);
+console.log("config.public=>", config.public);
+
+if (process.server) {
+  console.log("server token:", config.token);
+}
+
+if (process.client) {
+  console.log("A");
+}
+
+// onMounted(() =>{
+//   console.log("A");
+// })
 </script>
 
 <template>
