@@ -3,8 +3,9 @@ const text = ref("");
 
 definePageMeta({
   layout: "custom",
+  middleware: ["auth"],
 });
- 
+
 useSeoMeta({
   title: () => `${text.value} 關於我們 About`,
   description: "About Vue 是屬於前端框架，主要著重在瀏覽器渲染，而有些...",
