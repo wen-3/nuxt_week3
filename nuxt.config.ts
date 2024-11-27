@@ -1,10 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  "runtimeConfig": {
-    "TOKEN": '',
-    "public": {
-      "API_URL": '',
-    }
+  // "runtimeConfig": {
+  //   "TOKEN": '',
+  //   "public": {
+  //     "API_URL": '',
+  //   }
+  // },
+  "vite": {
+    "define": {
+      "process.env": process.env,
+    },
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },

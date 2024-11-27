@@ -28,17 +28,19 @@ useHead({
   ],
 });
 
-const config = useRuntimeConfig();
-console.log("config=>", config);
-console.log("config.public=>", config.public);
+console.log(process.env.WEB_URL);
 
-if (process.server) {
-  console.log("server token:", config.TOKEN);
-}
+// const config = useRuntimeConfig();
+// console.log("config=>", config);
+// console.log("config.public=>", config.public);
 
-if (process.client) {
-  console.log("A");
-}
+// if (process.server) {
+//   console.log("server token:", config.TOKEN);
+// }
+
+// if (process.client) {
+//   console.log("A");
+// }
 
 // onMounted(() =>{
 //   console.log("A");
