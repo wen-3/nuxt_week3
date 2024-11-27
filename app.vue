@@ -1,10 +1,16 @@
 <script setup>
+const layout = ref("custom");
 
+onMounted(() => {
+  setTimeout(() => {
+    layout.value = "default";
+  }, 1500);
+})
 </script>
 
 <template>
   <div>
-    <NuxtLayout>
+    <NuxtLayout :name="layout">
       <NuxtPage />
     </NuxtLayout>
   </div>
