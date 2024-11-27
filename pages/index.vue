@@ -14,6 +14,18 @@ useHead({
     { name: 'twitter:description', content: 'Vue 是屬於前端框架，主要著重在瀏覽器渲染，而有些...' },
     { name: 'twitter:image', content: `/logo.png` },
   ],
+  link: [
+    {
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
+    },
+  ],
+  script: [
+    {
+      src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js",
+      async: true,
+    },
+  ],
 });
 </script>
 
