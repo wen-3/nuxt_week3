@@ -28,7 +28,7 @@ useHead({
   ],
 });
 
-console.log(process.env.WEB_URL);
+// console.log(process.env.WEB_URL);
 
 // const config = useRuntimeConfig();
 // console.log("config=>", config);
@@ -41,6 +41,14 @@ console.log(process.env.WEB_URL);
 // if (process.client) {
 //   console.log("A");
 // }
+
+if (import.meta.client) {
+  // 在 client 端
+  console.log("在 client 端");
+} else {
+  // 在 server 端
+  console.log("在 server 端");
+}
 
 // onMounted(() =>{
 //   console.log("A");
