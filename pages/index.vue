@@ -59,6 +59,14 @@ if (import.meta.client) {
   <div>
     <h1>首頁</h1>
 
+    <ClientOnly>
+      <h1>這邊只會在 Client 端出現</h1>
+    </ClientOnly>
+
+    <DevOnly>
+      <h1>這邊只會在 dev 模式會出現</h1>
+    </DevOnly>
+
     <NuxtLink to="/about">關於我們</NuxtLink>
     <NuxtLink to="/address">聯絡地址</NuxtLink>
     <NuxtLink to="/courses/123/about">課程列表</NuxtLink>
